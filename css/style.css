@@ -20,6 +20,7 @@ body{
     width: 70%;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     margin: 0 auto;
 }
 .formValidation .left{
@@ -84,4 +85,26 @@ h2{
     font-weight: 600;
     color: #008080;
 }
+
+
+/* Mobile Responsive */
+@media only screen and (max-width: 576px){
+    .formValidation{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .formValidation .left, .formValidation .right{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .formValidation .left{
+        margin-bottom: 40px;
+    }
+    .formValidation .left button{
+        width: 36%;
+    }
+}
+/* Mobile Responsive */
 
